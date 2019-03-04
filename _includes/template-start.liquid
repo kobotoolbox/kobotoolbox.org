@@ -54,20 +54,4 @@
 </head>
 
 <body>
-    <header role="banner">
-        <h1><a href="{{site.baseurl}}/#home">KoBoToolbox</a></h1>
-        <nav role="navigation">
-            <ul id="nav" class="js-one-page-nav">
-                <li class="hide-mobile"><a href="{{site.baseurl}}/#home">Home</a></li>
-                <li class="hide-mobile"><a href="{{site.baseurl}}/#features">Features</a></li>
-                <li><a href="{{site.baseurl}}/#sign-up">Sign Up</a></li>
-                <li class="hide-mobile"><a href="{{site.baseurl}}/#about">About</a></li>
-                {% if page.isBlog %}
-                    <li class="hide-mobile current"><a href="{{site.baseurl}}/blog">Blog</a></li>
-                {% elsif site.posts.size != 0 %}
-                    <li class="hide-mobile"><a href="{{site.baseurl}}/#blog">Blog</a></li>
-                {% endif %}
-                <li class="hide-mobile"><a href="{{site.baseurl}}/#help">Help</a></li>
-            </ul>
-        </nav>
-    </header>
+    {% include page-header.liquid %}

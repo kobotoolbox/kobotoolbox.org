@@ -33,3 +33,4 @@ defaults:
     values:
       layout: "blog-post"
       isBlog: true
+isBlogEnabled: true

@@ -246,7 +246,7 @@ title: "KoBoToolbox | Data Collection Tools for Challenging Environments"
     </div>
 </section>
 
-{% if site.posts.size != 0 %}
+{% if site.isBlogEnabled %}
 <section id="blog" class="section">
     <div class="container">
         <h2>Latest blog post</h2>
@@ -256,11 +256,9 @@ title: "KoBoToolbox | Data Collection Tools for Challenging Environments"
         {% endfor %}
     </div>
 
-    {% if site.posts.size >= 2 %}
-        <div class="container container--centered">
-            <a class="button" href="{{site.baseurl}}/blog">More…</a>
-        </div>
-    {% endif %}
+    <div class="container container--centered">
+        <a class="button" href="{{site.baseurl}}/blog">More…</a>
+    </div>
 </section>
 {% endif %}
 
