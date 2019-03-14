@@ -33,3 +33,6 @@ defaults:
     values:
       layout: "blog-post"
       isBlog: true
+# this flag manages the visibility of blog, i.e. it hides blog link from top
+# navigation and blog section from main page
+isBlogEnabled: false

@@ -1,0 +1,105 @@
+@import "colors";
+
+.topnav {
+  overflow: hidden;
+  position: fixed;
+  z-index: 10;
+  top: 70px;
+  left: 0;
+  width: 100%;
+  background-color: rgba($black, 0.8);
+  text-align: right;
+
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    li {
+      display: inline-block;
+
+      a {
+        display: inline-block;
+        color: $white;
+        padding: 10px 8px;
+        text-decoration: none;
+        font-size: 16px;
+
+        &:hover {
+          color: $white;
+          opacity: 0.8;
+        }
+      }
+
+      @media screen and (min-width: 769px) {
+        &.current a {
+          color: $blue;
+        }
+      }
+    }
+  }
+}
+
+#khc,
+#members,
+#purpose {
+  background: $whitesmoke;
+
+  h2 {
+    text-align: center;
+  }
+}
+
+#committee,
+#vision,
+#join {
+  background: rgba($black, 0.8);
+  border-bottom: none;
+  color: $white;
+
+  h2 {
+    text-align: center;
+  }
+}
+
+#committee {
+  text-align: center;
+
+  a {
+    display: inline-block;
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+
+  img {
+    max-height: 65px;
+    width: auto;
+  }
+}
+
+#vision {
+  h3 {
+    margin-top: 50px;
+  }
+
+  a {
+    display: inline-block;
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+
+  img {
+    max-height: 65px;
+    width: auto;
+  }
+}
+
+
+
+#join {
+  text-align: center;
+
+  .button {
+    margin-top: 40px;
+  }
+}

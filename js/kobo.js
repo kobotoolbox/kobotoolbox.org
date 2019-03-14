@@ -1,5 +1,5 @@
 $(function() {
-    $('#nav').onePageNav({
+    $('.js-one-page-nav').onePageNav({
         currentClass: 'current',
         changeHash: false,
         scrollSpeed: 750,

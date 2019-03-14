@@ -1,16 +1,15 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500|Source+Sans+Pro:600");
 
+@import "colors";
 @import "mixins";
 @import "slider";
+@import "header";
+@import "khc";
 
 $min_width: 320px;
 $max_width: 1000px;
 $min_font: 14px;
 $max_font: 18px;
-$blue: #2095f3;
-$black: #414453;
-$gray: #a6aaba;
-$green: #52c5d0;
 
 html {
   @include fluid-type($min_width, $max_width, $min_font, $max_font);
@@ -107,61 +106,6 @@ table {
   }
 }
 
-header {
-  position: fixed;
-  height: 70px;
-  background: #414453;
-  color: white;
-  width: 100%;
-  display: flex;
-  z-index: 999;
-
-  h1 {
-    flex-grow: 1;
-    margin: 15px 20px;
-    padding: 0;
-    color: transparent;
-    background: url("../images/kobologo.svg") no-repeat 0 100%;
-    background-size: contain;
-
-    a, a:hover {
-      color: transparent;
-      font-size: 1em;
-    }
-  }
-
-  ul#nav {
-    flex-grow: 0;
-    margin: 0px;
-    padding: 24px 30px;
-    list-style-type: none;
-    text-transform: uppercase;
-    font-family: 'Source Sans Pro', sans-serif;
-    font-weight: 600;
-
-    li {
-      display: inline-block;
-      margin-left: 1.2em;
-      margin-right: 0px;
-
-      a {
-        color: white;
-        text-decoration: none;
-      }
-
-      @media screen and (min-width: 769px) {
-        &.current a {
-          color: $blue;
-        }
-      }
-    }
-
-    @media screen and (max-width: 359px) {
-      padding: 24px 15px;
-    }
-  }
-}
-
 .bg {
   background: url("../images/front_background2.jpg") center center no-repeat;
   background-size: cover;
@@ -170,55 +114,18 @@ header {
   top: 0px;
   left: 0px;
   width: 100%;
+
+  &.bg--hhi {
+    background-image: url("../images/khc2.jpg");
+  }
 }
 
 section.section {
-  padding: 50px 30px 70px 30px;
+  padding: 80px 30px;
   border-bottom: 1px solid #DDD;
 
   &:first-of-type {
     padding-top: 70px;
-  }
-
-  &#home {
-    color: white;
-    text-align: center;
-    position: relative;
-    min-height: 600px;
-
-    &:after {
-      content: ' ';
-      background: rgba(65, 68, 83, 0.75);
-      background: linear-gradient(to bottom, rgba(65, 68, 83, 0.9) 0%, rgba(65, 68, 83, 0.5) 100%);
-      width: 100%;
-      height: 100%;
-      position: absolute;
-      left: 0px;
-      top: 0px;
-    }
-
-    .container {
-      padding-top: 200px;
-      position: relative;
-      z-index: 2;
-
-      @media screen and (min-width: 769px) {
-        padding-top: 300px;
-      }
-    }
-
-    h1 {
-      text-transform: uppercase;
-      padding: 1em 2em;
-      font-size: 2.5rem;
-    }
-
-    @media screen and (max-width: 550px) {
-      h1 {
-        padding: 1em 0;
-        font-size: 2.2rem;
-      }
-    }
   }
 
   h2 {
@@ -249,7 +156,7 @@ section.section {
 }
 
 #features {
-  background: #F8F8F8;
+  background: $whitesmoke;
 }
 
 #blog {
@@ -331,7 +238,7 @@ section.section {
   background: #FFF;
 
   a.button {
-      margin-bottom: 1em;
+    margin-bottom: 1em;
   }
 
   .try-now {
@@ -364,7 +271,7 @@ section.section {
 }
 
 #about {
-  background: #F8F8F8;
+  background: $whitesmoke;
 
   .container {
     max-width: 640px;
@@ -390,8 +297,7 @@ section.section {
 
 #partners {
   text-align: center;
-  padding: 40px 20px 80px 20px;
-  background: rgba(65, 68, 83, 0.8);
+  background: rgba($black, 0.8);
   border-bottom: none;
 
   h2, h3 {
@@ -456,7 +362,7 @@ section.section {
     max-width: 450px;
     display: flex;
     margin: 40px auto;
-    background: rgba(65, 68, 83, 0.05);
+    background: rgba($black, 0.05);
     padding: 0px 10px 0px 20px;
     flex-wrap: wrap;
 
@@ -524,7 +430,7 @@ section.section {
 }
 
 #help {
-  background: #F8F8F8;
+  background: $whitesmoke;
   text-align: center;
 
   .container {
@@ -533,8 +439,8 @@ section.section {
 }
 
 footer {
-  background: rgba(65, 68, 83, 0.9);
-  padding: 50px 20px;
+  background: rgba($black, 0.9);
+  padding: 80px 30px;
   text-align: center;
   color: white;
 
@@ -560,6 +466,47 @@ footer {
   }
 }
 
+section.section-slider {
+  color: white;
+  text-align: center;
+  position: relative;
+  min-height: 600px;
+
+  &:after {
+    content: ' ';
+    background: rgba($black, 0.75);
+    background: linear-gradient(to bottom, rgba($black, 0.9) 0%, rgba($black, 0.5) 100%);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+  }
+
+  .container {
+    padding-top: 200px;
+    position: relative;
+    z-index: 2;
+
+    @media screen and (min-width: 769px) {
+      padding-top: 300px;
+    }
+  }
+
+  h1 {
+    text-transform: uppercase;
+    padding: 1em 2em;
+    font-size: 2.5rem;
+  }
+
+  @media screen and (max-width: 550px) {
+    h1 {
+      padding: 1em 0;
+      font-size: 2.2rem;
+    }
+  }
+}
+
 section.section-text-page {
   .container {
     max-width: 900px;
@@ -578,8 +525,7 @@ section.section-text-page {
 
 #examples {
   text-align: center;
-  padding: 40px 20px 80px 20px;
-  background: rgba(65, 68, 83, 0.8);
+  background: rgba($black, 0.8);
   border-bottom: none;
 
   h2, h3, p {

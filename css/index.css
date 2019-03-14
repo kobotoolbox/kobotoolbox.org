@@ -153,6 +153,123 @@
       width: 100%;
       border: 0; }
 
+header {
+  position: fixed;
+  height: 70px;
+  background: #414453;
+  color: #ffffff;
+  width: 100%;
+  display: flex;
+  z-index: 999; }
+  header h1 {
+    flex-grow: 1;
+    margin: 15px 20px;
+    padding: 0;
+    color: transparent;
+    background: url("../images/kobologo.svg") no-repeat 0 100%;
+    background-size: contain; }
+    header h1 a, header h1 a:hover {
+      color: transparent;
+      font-size: 1em; }
+  header ul#nav {
+    flex-grow: 0;
+    margin: 0px;
+    padding: 24px 30px;
+    list-style-type: none;
+    text-transform: uppercase;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 600; }
+    header ul#nav li {
+      display: inline-block;
+      margin-left: 1.2em;
+      margin-right: 0px; }
+      header ul#nav li a {
+        color: #ffffff;
+        text-decoration: none; }
+        header ul#nav li a:hover {
+          opacity: 0.8; }
+      @media screen and (min-width: 769px) {
+        header ul#nav li.current a {
+          color: #2095f3; } }
+    @media screen and (max-width: 359px) {
+      header ul#nav {
+        padding: 24px 15px; } }
+
+.topnav {
+  overflow: hidden;
+  position: fixed;
+  z-index: 10;
+  top: 70px;
+  left: 0;
+  width: 100%;
+  background-color: rgba(65, 68, 83, 0.35);
+  text-align: right; }
+  .topnav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0; }
+    .topnav ul li {
+      display: inline-block; }
+      .topnav ul li a {
+        display: inline-block;
+        color: #ffffff;
+        padding: 10px 8px;
+        text-decoration: none;
+        font-size: 16px; }
+        .topnav ul li a:hover {
+          color: #ffffff;
+          opacity: 0.8; }
+      @media screen and (min-width: 769px) {
+        .topnav ul li.current a {
+          color: #2095f3; } }
+
+#khc,
+#members,
+#purpose {
+  background: #f8f8f8; }
+  #khc h2,
+  #members h2,
+  #purpose h2 {
+    text-align: center; }
+
+#committee,
+#vision,
+#join {
+  background: rgba(65, 68, 83, 0.8);
+  border-bottom: none;
+  color: #ffffff; }
+  #committee h2,
+  #vision h2,
+  #join h2 {
+    text-align: center; }
+
+#committee {
+  text-align: center; }
+  #committee a {
+    display: inline-block;
+    margin-right: 10px;
+    margin-left: 10px; }
+  #committee img {
+    max-height: 65px;
+    width: auto; }
+
+#vision h3 {
+  margin-top: 50px; }
+
+#vision a {
+  display: inline-block;
+  margin-right: 10px;
+  margin-left: 10px; }
+
+#vision img {
+  max-height: 65px;
+  width: auto; }
+
+#join {
+  text-align: center; }
+  #join .button {
+    margin-top: 40px; }
+
 html {
   line-height: 1.25em; }
   html {
@@ -227,46 +344,6 @@ table {
   .hide-mobile {
     display: none !important; } }
 
-header {
-  position: fixed;
-  height: 70px;
-  background: #414453;
-  color: white;
-  width: 100%;
-  display: flex;
-  z-index: 999; }
-  header h1 {
-    flex-grow: 1;
-    margin: 15px 20px;
-    padding: 0;
-    color: transparent;
-    background: url("../images/kobologo.svg") no-repeat 0 100%;
-    background-size: contain; }
-    header h1 a, header h1 a:hover {
-      color: transparent;
-      font-size: 1em; }
-  header ul#nav {
-    flex-grow: 0;
-    margin: 0px;
-    padding: 24px 30px;
-    list-style-type: none;
-    text-transform: uppercase;
-    font-family: 'Source Sans Pro', sans-serif;
-    font-weight: 600; }
-    header ul#nav li {
-      display: inline-block;
-      margin-left: 1.2em;
-      margin-right: 0px; }
-      header ul#nav li a {
-        color: white;
-        text-decoration: none; }
-      @media screen and (min-width: 769px) {
-        header ul#nav li.current a {
-          color: #2095f3; } }
-    @media screen and (max-width: 359px) {
-      header ul#nav {
-        padding: 24px 15px; } }
-
 .bg {
   background: url("../images/front_background2.jpg") center center no-repeat;
   background-size: cover;
@@ -275,41 +352,14 @@ header {
   top: 0px;
   left: 0px;
   width: 100%; }
+  .bg.bg--hhi {
+    background-image: url("../images/khc2.jpg"); }
 
 section.section {
-  padding: 50px 30px 70px 30px;
+  padding: 80px 30px;
   border-bottom: 1px solid #DDD; }
   section.section:first-of-type {
     padding-top: 70px; }
-  section.section#home {
-    color: white;
-    text-align: center;
-    position: relative;
-    min-height: 600px; }
-    section.section#home:after {
-      content: ' ';
-      background: rgba(65, 68, 83, 0.75);
-      background: linear-gradient(to bottom, rgba(65, 68, 83, 0.9) 0%, rgba(65, 68, 83, 0.5) 100%);
-      width: 100%;
-      height: 100%;
-      position: absolute;
-      left: 0px;
-      top: 0px; }
-    section.section#home .container {
-      padding-top: 200px;
-      position: relative;
-      z-index: 2; }
-      @media screen and (min-width: 769px) {
-        section.section#home .container {
-          padding-top: 300px; } }
-    section.section#home h1 {
-      text-transform: uppercase;
-      padding: 1em 2em;
-      font-size: 2.5rem; }
-    @media screen and (max-width: 550px) {
-      section.section#home h1 {
-        padding: 1em 0;
-        font-size: 2.2rem; } }
   section.section h2 {
     text-align: center;
     text-transform: uppercase;
@@ -329,7 +379,7 @@ section.section {
     text-align: center; }
 
 #features {
-  background: #F8F8F8; }
+  background: #f8f8f8; }
 
 #blog {
   background: #fff; }
@@ -404,7 +454,7 @@ section.section {
     margin: 0 auto; } }
 
 #about {
-  background: #F8F8F8; }
+  background: #f8f8f8; }
   #about .container {
     max-width: 640px; }
   #about .video {
@@ -423,7 +473,6 @@ section.section {
 
 #partners {
   text-align: center;
-  padding: 40px 20px 80px 20px;
   background: rgba(65, 68, 83, 0.8);
   border-bottom: none; }
   #partners h2, #partners h3 {
@@ -512,14 +561,14 @@ section.section {
         color: #a6aaba; }
 
 #help {
-  background: #F8F8F8;
+  background: #f8f8f8;
   text-align: center; }
   #help .container {
     max-width: 720px; }
 
 footer {
   background: rgba(65, 68, 83, 0.9);
-  padding: 50px 20px;
+  padding: 80px 30px;
   text-align: center;
   color: white; }
   footer p {
@@ -536,6 +585,36 @@ footer {
         color: white;
         opacity: 1; }
 
+section.section-slider {
+  color: white;
+  text-align: center;
+  position: relative;
+  min-height: 600px; }
+  section.section-slider:after {
+    content: ' ';
+    background: rgba(65, 68, 83, 0.75);
+    background: linear-gradient(to bottom, rgba(65, 68, 83, 0.9) 0%, rgba(65, 68, 83, 0.5) 100%);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0px;
+    top: 0px; }
+  section.section-slider .container {
+    padding-top: 200px;
+    position: relative;
+    z-index: 2; }
+    @media screen and (min-width: 769px) {
+      section.section-slider .container {
+        padding-top: 300px; } }
+  section.section-slider h1 {
+    text-transform: uppercase;
+    padding: 1em 2em;
+    font-size: 2.5rem; }
+  @media screen and (max-width: 550px) {
+    section.section-slider h1 {
+      padding: 1em 0;
+      font-size: 2.2rem; } }
+
 section.section-text-page .container {
   max-width: 900px; }
   section.section-text-page .container h1 {
@@ -547,7 +626,6 @@ section.section-text-page .container {
 
 #examples {
   text-align: center;
-  padding: 40px 20px 80px 20px;
   background: rgba(65, 68, 83, 0.8);
   border-bottom: none; }
   #examples h2, #examples h3, #examples p {
