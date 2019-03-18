@@ -13,7 +13,7 @@
   ul {
     list-style: none;
     margin: 0;
-    padding: 0;
+    padding: 0 25px;
 
     li {
       display: inline-block;
@@ -41,25 +41,27 @@
 }
 
 #khc,
-#members,
-#purpose {
-  background: $whitesmoke;
-
+#purpose,
+#join,
+#committee,
+#vision {
   h2 {
     text-align: center;
   }
 }
 
+#khc,
+#purpose,
+#join,
+#donate {
+  background: $whitesmoke;
+}
+
 #committee,
-#vision,
-#join {
+#vision {
   background: rgba($black, 0.8);
   border-bottom: none;
   color: $white;
-
-  h2 {
-    text-align: center;
-  }
 }
 
 #committee {
@@ -94,12 +96,15 @@
   }
 }
 
-
-
-#join {
+#join,
+#donate {
   text-align: center;
 
   .button {
     margin-top: 40px;
   }
+}
+
+#donate p:first-child {
+  margin-top: 0;
 }

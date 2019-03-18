@@ -202,12 +202,12 @@ header {
   top: 70px;
   left: 0;
   width: 100%;
-  background-color: rgba(65, 68, 83, 0.35);
+  background-color: rgba(65, 68, 83, 0.8);
   text-align: right; }
   .topnav ul {
     list-style: none;
     margin: 0;
-    padding: 0; }
+    padding: 0 25px; }
     .topnav ul li {
       display: inline-block; }
       .topnav ul li a {
@@ -223,25 +223,24 @@ header {
         .topnav ul li.current a {
           color: #2095f3; } }
 
+#khc h2,
+#purpose h2,
+#join h2,
+#committee h2,
+#vision h2 {
+  text-align: center; }
+
 #khc,
-#members,
-#purpose {
+#purpose,
+#join,
+#donate {
   background: #f8f8f8; }
-  #khc h2,
-  #members h2,
-  #purpose h2 {
-    text-align: center; }
 
 #committee,
-#vision,
-#join {
+#vision {
   background: rgba(65, 68, 83, 0.8);
   border-bottom: none;
   color: #ffffff; }
-  #committee h2,
-  #vision h2,
-  #join h2 {
-    text-align: center; }
 
 #committee {
   text-align: center; }
@@ -265,10 +264,15 @@ header {
   max-height: 65px;
   width: auto; }
 
-#join {
+#join,
+#donate {
   text-align: center; }
-  #join .button {
+  #join .button,
+  #donate .button {
     margin-top: 40px; }
+
+#donate p:first-child {
+  margin-top: 0; }
 
 html {
   line-height: 1.25em; }
