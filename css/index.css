@@ -202,7 +202,7 @@ header {
   top: 70px;
   left: 0;
   width: 100%;
-  background-color: rgba(65, 68, 83, 0.35);
+  background-color: rgba(65, 68, 83, 0.8);
   text-align: right; }
   .topnav ul {
     list-style: none;
@@ -225,22 +225,22 @@ header {
 
 #khc,
 #members,
-#purpose {
+#purpose,
+#join {
   background: #f8f8f8; }
   #khc h2,
   #members h2,
-  #purpose h2 {
+  #purpose h2,
+  #join h2 {
     text-align: center; }
 
 #committee,
-#vision,
-#join {
+#vision {
   background: rgba(65, 68, 83, 0.8);
   border-bottom: none;
   color: #ffffff; }
   #committee h2,
-  #vision h2,
-  #join h2 {
+  #vision h2 {
     text-align: center; }
 
 #committee {

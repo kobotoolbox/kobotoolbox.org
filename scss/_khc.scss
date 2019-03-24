@@ -42,7 +42,8 @@
 
 #khc,
 #members,
-#purpose {
+#purpose,
+#join  {
   background: $whitesmoke;
 
   h2 {
@@ -51,8 +52,7 @@
 }
 
 #committee,
-#vision,
-#join {
+#vision {
   background: rgba($black, 0.8);
   border-bottom: none;
   color: $white;
