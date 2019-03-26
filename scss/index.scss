@@ -434,7 +434,13 @@ section.section {
   text-align: center;
 
   .container {
-    max-width: 720px;
+    max-width: 750px;
+  }
+
+  .two-cols {
+    @media screen and (min-width: 769px) {
+      align-items: flex-end;
+    }
   }
 }
 
