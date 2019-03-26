@@ -10,9 +10,6 @@
     "jekyll-build": "jekyll build",
     "jekyll-serve": "jekyll serve --watch --baseurl ''"
   },
-  "dependencies": {
-    "hoek": "^6.1.2"
-  },
   "devDependencies": {
     "gulp": "^4.0.0",
     "gulp-autoprefixer": "^6.0.0",
