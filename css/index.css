@@ -565,6 +565,9 @@ section.section {
   text-align: center; }
   #help .container {
     max-width: 750px; }
+  @media screen and (min-width: 769px) {
+    #help .two-cols {
+      align-items: flex-end; } }
 
 footer {
   background: rgba(65, 68, 83, 0.9);

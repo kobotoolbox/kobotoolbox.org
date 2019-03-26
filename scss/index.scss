@@ -436,6 +436,12 @@ section.section {
   .container {
     max-width: 750px;
   }
+
+  .two-cols {
+    @media screen and (min-width: 769px) {
+      align-items: flex-end;
+    }
+  }
 }
 
 footer {
