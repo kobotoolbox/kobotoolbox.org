@@ -213,14 +213,22 @@ header {
       .topnav ul li a {
         display: inline-block;
         color: #ffffff;
-        padding: 10px 8px;
+        padding: 10px;
         text-decoration: none;
         font-size: 16px; }
         .topnav ul li a:hover {
           color: #ffffff;
           opacity: 0.8; }
+        .topnav ul li a.topnav__button {
+          background-color: #2095f3;
+          color: #ffffff;
+          border-radius: 5px;
+          padding-top: 5px;
+          padding-bottom: 5px;
+          margin-top: 5px;
+          margin-bottom: 5px; }
       @media screen and (min-width: 769px) {
-        .topnav ul li.current a {
+        .topnav ul li.current a:not(.topnav__button) {
           color: #2095f3; } }
 
 #khc h2,
