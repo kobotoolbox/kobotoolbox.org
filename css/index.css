@@ -207,7 +207,7 @@ header {
   .topnav ul {
     list-style: none;
     margin: 0;
-    padding: 0 30px; }
+    padding: 0 28px; }
     .topnav ul li {
       display: inline-block; }
       .topnav ul li a {
@@ -240,8 +240,7 @@ header {
 
 #khc,
 #purpose,
-#join,
-#donate {
+#join {
   background: #f8f8f8; }
 
 #committee,
@@ -272,15 +271,10 @@ header {
   max-height: 65px;
   width: auto; }
 
-#join,
-#donate {
+#join {
   text-align: center; }
-  #join .button,
-  #donate .button {
+  #join .button {
     margin-top: 40px; }
-
-#donate p:first-child {
-  margin-top: 0; }
 
 html {
   line-height: 1.25em; }

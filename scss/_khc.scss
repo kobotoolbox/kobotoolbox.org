@@ -13,7 +13,7 @@
   ul {
     list-style: none;
     margin: 0;
-    padding: 0 30px;
+    padding: 0 28px;
 
     li {
       display: inline-block;
@@ -62,8 +62,7 @@
 
 #khc,
 #purpose,
-#join,
-#donate {
+#join {
   background: $whitesmoke;
 }
 
@@ -106,15 +105,10 @@
   }
 }
 
-#join,
-#donate {
+#join {
   text-align: center;
 
   .button {
     margin-top: 40px;
   }
-}
-
-#donate p:first-child {
-  margin-top: 0;
 }
