@@ -202,7 +202,7 @@ header {
   top: 70px;
   left: 0;
   width: 100%;
-  background-color: rgba(65, 68, 83, 0.35);
+  background-color: rgba(65, 68, 83, 0.8);
   text-align: right; }
   .topnav ul {
     list-style: none;
@@ -269,6 +269,19 @@ header {
   text-align: center; }
   #join .button {
     margin-top: 40px; }
+
+#join-our-team h2 small {
+  text-transform: none; }
+
+#join-our-team table {
+  width: 100%; }
+
+#join-our-team td {
+  border: none;
+  vertical-align: top;
+  max-width: 33%; }
+  #join-our-team td h3 {
+    margin: 0 !important; }
 
 html {
   line-height: 1.25em; }
