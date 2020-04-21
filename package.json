@@ -5,19 +5,16 @@
   "repository": "https://github.com/kobotoolbox/kobotoolbox.org.git",
   "bugs": "https://github.com/kobotoolbox/kobotoolbox.org/issues",
   "scripts": {
-    "_clean": "rimraf scss",
     "_compile": "node-sass --output-style=expanded --source-map=true scss/index.scss css/index.css",
     "_prefix": "postcss css/index.css --use=autoprefixer --map=false --output=css/index.css",
-    "_minify": "cleancss --level=1 --source-map --source-map-inline-sources --output css/scss/main.min.css css/index.css",
     "styles-watch": "npm run _compile -- --watch",
-    "styles-build": "npm run _clean && npm run _compile && npm run _prefix && npm run _minify",
+    "styles-build": "npm run _compile && npm run _prefix",
     "jekyll-build": "jekyll build",
     "jekyll-serve": "jekyll serve --watch --baseurl ''"
   },
   "devDependencies": {
     "autoprefixer": "^9.7.6",
     "browserslist": "^4.12.0",
-    "clean-css-cli": "^4.3.0",
     "node-sass": "^4.13.1",
     "postcss": "^7.0.27",
     "postcss-cli": "^7.1.0"
