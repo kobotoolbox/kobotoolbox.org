@@ -11,6 +11,7 @@ $min_width: 320px;
 $max_width: 1000px;
 $min_font: 14px;
 $max_font: 18px;
+$link_transition: all 0.2s;
 
 html {
   @include fluid-type($min_width, $max_width, $min_font, $max_font);
@@ -31,10 +32,10 @@ h1, h2, h3 {
 
 a {
   color: $blue;
-  transition: all 0.2s;
+  transition: $link_transition;
 
   &:hover {
-    transition: all 0.2s;
+    transition: $link_transition;
     color: darken($blue, 15%);
   }
 
@@ -49,6 +50,14 @@ a {
     text-decoration: none;
     display: inline-block;
     border-radius: 5px;
+
+    &.button--covid-red {
+      background: $covid-red;
+
+      &:hover {
+        background: darken($covid-red, 15%);
+      }
+    }
 
     &:hover {
       background: darken($blue, 15%);
@@ -445,6 +454,15 @@ section.section {
   }
 }
 
+#covid {
+  background: $covid-blue;
+  text-align: center;
+
+  .covid-icon {
+    width: 71px;
+  }
+}
+
 footer {
   background: rgba($black, 0.9);
   padding: 80px 30px;
@@ -570,6 +588,11 @@ section.section-text-page {
           color: #FFF;
           opacity: 0.75;
           display: block;
+          transition: $link_transition;
+
+          &:hover {
+            transition: $link_transition;
+          }
         }
 
         &:hover, &:hover span {
@@ -642,5 +665,59 @@ section.section-text-page {
 
   .post-summary__summary {
     margin: 1rem 0.5rem;
+  }
+}
+
+.banner {
+  position: absolute;
+  z-index: 10;
+  top: 70px + 30px;
+  left: 30px;
+  right: 30px;
+  background: $white;
+  color: $black;
+  display: flex;
+  flex-direction: row;
+  text-align: left;
+
+  &.banner--covid {
+    border-left: 4px solid $covid-red;
+
+    .banner__image-wrapper {
+      background-color: $covid-blue;
+      width: 100px;
+      height: 100px;
+      padding: 15px;
+      box-sizing: border-box;
+    }
+
+    .banner__image {
+      width: 71px;
+    }
+  }
+
+  .banner__text {
+    flex: 1;
+    margin: 15px;
+
+    h1 {
+      padding: 0;
+      margin: 0;
+      font-size: inherit;
+      text-transform: none;
+      font-weight: bold;
+    }
+
+    p {
+      margin: 0.25em auto 0;
+      font-size: 0.8em;
+    }
+  }
+
+  .banner__action {
+    align-self: flex-end;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 15px;
   }
 }
