@@ -118,13 +118,13 @@ $(function() {
     }
 
     // covid banner
-    document.querySelector('.js-covid-button-1').addEventListener('click', (evt) => {
+    document.querySelector('.js-covid-button').addEventListener('click', (evt) => {
         evt.preventDefault();
-        scrollIt(document.querySelector('.js-covid-target-1'), 300);
+        scrollIt(document.querySelector('.js-covid-target'), 300);
     });
     document.querySelector('.js-covid-button-2').addEventListener('click', (evt) => {
         evt.preventDefault();
-        scrollIt(document.querySelector('.js-covid-target-2'), 300);
+        scrollIt(document.querySelector('.js-covid-target'), 300);
     });
 
 });
