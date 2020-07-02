@@ -18,4 +18,4 @@ Start off with `npm install`, `gem install jekyll`, and then you can use one of 
 - building website locally: `npm run jekyll-build` (builds to `_site` directory)
 - serving website to local development server: `npm run jekyll-serve` plus go to [localhost:2038](localhost:2038)
 
-If you want to add blog posts, just create a new one at `_posts` directory and push a commit to `master` branch. GitHub builds Jekyll automagically.
+If you want to add blog posts, just create a new one at `_posts` directory and push a commit to `master` branch. GitHub builds Jekyll automatically.
