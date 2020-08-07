@@ -1,0 +1,56 @@
+@import "../variables";
+
+#examples {
+  text-align: center;
+  background: rgba($black, 0.8);
+  border-bottom: none;
+
+  h2, h3, p {
+    color: white;
+  }
+
+  .group-examples {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 830px;
+    margin: 0 auto;
+
+    .example-item {
+      padding: 25px;
+      padding-right: 15px;
+      width: 25%;
+      box-sizing: border-box;
+      text-align: left;
+
+      @media screen and (max-width: 768px) {
+        width: 50%;
+      }
+
+      a {
+        font-size: 18px;
+        line-height: 20px;
+        color: lighten($blue, 10%);
+        text-decoration: none;
+        opacity: 0.75;
+
+        span {
+          text-transform: uppercase;
+          font-family: 'Source Sans Pro', sans-serif;
+          color: #FFF;
+          opacity: 0.75;
+          display: block;
+          transition: $link_transition;
+
+          &:hover {
+            transition: $link_transition;
+          }
+        }
+
+        &:hover, &:hover span {
+          opacity: 1;
+        }
+      }
+    }
+  }
+}

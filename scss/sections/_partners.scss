@@ -1,0 +1,72 @@
+@import "../variables";
+
+#partners {
+  text-align: center;
+  background: rgba($black, 0.8);
+  border-bottom: none;
+
+  h2, h3 {
+    color: white;
+  }
+
+  h3 {
+    margin-top: 50px;
+  }
+
+  .partners-group {
+    a {
+      display: inline-block;
+      margin: 10px;
+    }
+
+    img {
+      vertical-align: middle;
+      height: auto;
+      width: auto;
+    }
+
+    &.partners-group--main {
+      img {
+        height: 65px;
+      }
+    }
+
+    &.partners-group--additional {
+      padding: 10px 40px;
+
+      a {
+        margin-bottom: 25px;
+      }
+
+      img {
+        min-height: 32px;
+        max-height: 45px;
+      }
+
+      img[src$=".svg"] {
+        height: 45px;
+      }
+    }
+  }
+
+  .partner {
+    &:hover {
+      scale: 1.1;
+    }
+
+    &.partner--fidelity img {
+      min-height: 18px;
+      max-height: 18px;
+    }
+
+    &.partner--wcs img {
+      min-height: 40px;
+    }
+
+    &.partner--hilton img,
+    &.partner--irc img {
+      min-height: 65px;
+      max-height: 65px;
+    }
+  }
+}

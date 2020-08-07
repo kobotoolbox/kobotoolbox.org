@@ -1,0 +1,75 @@
+@import "../variables";
+
+#dev {
+  background: #FFF;
+
+  .main-projects {
+    max-width: 450px;
+    display: flex;
+    margin: 40px auto;
+    background: rgba($black, 0.05);
+    padding: 0px 10px 0px 20px;
+    flex-wrap: wrap;
+
+    .repo-item {
+      padding: 1em 0.5em;
+      width: 50%;
+      box-sizing: border-box;
+
+      span {
+        display: block;
+        font-size: 0.9em;
+        color: $gray;
+      }
+
+      a {
+        text-decoration: none;
+        color: darken($blue, 5%);
+        font-weight: 600;
+
+        &:hover {
+          color: lighten($blue, 5%);
+        }
+      }
+    }
+  }
+
+  .team {
+    max-width: 700px;
+    margin: 40px auto;
+    text-align: center;
+
+    .team-list {
+      display: flex;
+      max-width: 560px;
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin: 0 auto;
+    }
+
+    .team-item {
+      text-align: left;
+      padding: 1em;
+      box-sizing: border-box;
+      width: 33.3%;
+
+      @media screen and (max-width: 768px) {
+        width: 50%;
+        padding-top: 0.5em;
+      }
+
+      b {
+        white-space: nowrap
+      }
+
+      span {
+        display: block;
+        font-size: 0.9em;
+        margin-top: 5px;
+        color: $gray;
+      }
+    }
+  }
+}

@@ -1,0 +1,114 @@
+- name: "hhi"
+  url: "https://hhi.harvard.edu"
+  logo: "images/logos/HHI.png"
+  is_main: true
+
+- name: "bwh"
+  url: "https://www.brighamandwomens.org"
+  logo: "images/logos/bwh-logo.svg"
+  is_main: true
+
+- name: "kweyo"
+  url: ""
+  logo: "images/logos/kweyo.png"
+  is_main: true
+
+- name: "cisco"
+  url: "https://cisco.com"
+  logo: "images/logos/cisco.svg"
+  is_main: false
+
+- name: "fidelity"
+  url: "http://www.fidelityfoundation.org"
+  logo: "images/logos/fidelity.png"
+  is_main: false
+
+- name: "hilton"
+  url: "https://hiltonfoundation.org"
+  logo: "images/logos/hilton-white.svg"
+  is_main: false
+
+- name: "humanityunited"
+  url: "https://humanityunited.org"
+  logo: "images/logos/humanity-united.png"
+  is_main: false
+
+- name: "iom"
+  url: "http://iom.by"
+  logo: "images/logos/IOM-Logo-EN-White.png"
+  is_main: false
+
+- name: "m4mgmt"
+  url: "https://m4mgmt.org"
+  logo: "images/logos/m4mgmt.svg"
+  is_main: false
+
+- name: "macarthur"
+  url: "https://macfound.org"
+  logo: "images/logos/macarthur-stacked.svg"
+  is_main: false
+
+- name: "msf"
+  url: "https://msf.org"
+  logo: "images/logos/MSF.png"
+  is_main: false
+
+- name: "phr"
+  url: "https://physiciansforhumanrights.org"
+  logo: "images/logos/phr.png"
+  is_main: false
+
+- name: "irc"
+  url: "https://rescue.org"
+  logo: "images/logos/IRC.png"
+  is_main: false
+
+- name: "savethechildren"
+  url: "https://savethechildren.net"
+  logo: "images/logos/Save_the_Children_logo.png"
+  is_main: false
+
+- name: "tides"
+  url: "http://tides.org"
+  logo: "images/logos/tides.svg"
+  is_main: false
+
+- name: "undp"
+  url: "https://undp.org"
+  logo: "images/logos/undp.png"
+  is_main: false
+
+- name: "unhcr"
+  url: "https://unhcr.org"
+  logo: "images/logos/UNHCR-offical-logo-RGB-white.png"
+  is_main: false
+
+- name: "unocha"
+  url: "https://unocha.org"
+  logo: "images/logos/ocha.png"
+  is_main: false
+
+- name: "usaid"
+  url: "https://usaid.gov"
+  logo: "images/logos/usaid.png"
+  is_main: false
+
+- name: "wcs"
+  url: "https://wcs.org"
+  logo: "images/logos/WCS.svg"
+  is_main: false
+
+- name: "wfp"
+  url: "https://wfp.org"
+  logo: "images/logos/wfp-logo.svg"
+  is_main: false
+
+- name: "worldbank"
+  url: "https://www.worldbank.org"
+  logo: "images/logos/theworldbank.svg"
+  is_main: false
+
+- name: "wri"
+  url: "https://wri.org"
+  logo: "images/logos/WRI.png"
+  is_main: false

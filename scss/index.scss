@@ -1,17 +1,18 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500|Source+Sans+Pro:600");
 
-@import "colors";
+@import "variables";
 @import "mixins";
 @import "slider";
 @import "header";
 @import "khc";
-@import "join-our-team";
-
-$min_width: 320px;
-$max_width: 1000px;
-$min_font: 14px;
-$max_font: 18px;
-$link_transition: all 0.2s;
+@import "sections/about";
+@import "sections/covid";
+@import "sections/dev";
+@import "sections/examples";
+@import "sections/help";
+@import "sections/join-our-team";
+@import "sections/partners";
+@import "sections/sign-up";
 
 html {
   @include fluid-type($min_width, $max_width, $min_font, $max_font);
@@ -244,222 +245,10 @@ section.section {
   }
 }
 
-#sign-up {
-  background: #FFF;
-
-  a.button {
-    margin-bottom: 1em;
-  }
-
-  .try-now {
-    text-align: center;
-    margin-bottom: 0px;
-    padding-top: 50px;
-
-    @media screen and (max-width: 768px) {
-      padding-bottom: 1.5em;
-      padding-top: 1.5em;
-    }
-
-    p {
-      font-size: 0.8em;
-      margin-top: -1em;
-      color: $gray;
-    }
-
-    h4 {
-      margin-top: 0px;
-    }
-  }
-}
-
 .two-cols.f4 {
   @media screen and (min-width: 769px) {
     max-width: 900px;
     margin: 0 auto;
-  }
-}
-
-#about {
-  background: $whitesmoke;
-
-  .container {
-    max-width: 640px;
-  }
-
-  .video {
-    position: relative;
-    width: 100%;
-    margin: 50px auto;
-    height: 0;
-    padding-bottom: 56.25%;
-  }
-
-  iframe {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    border: 0px;
-  }
-}
-
-#partners {
-  text-align: center;
-  background: rgba($black, 0.8);
-  border-bottom: none;
-
-  h2, h3 {
-    color: white;
-  }
-
-  h3 {
-    margin-top: 50px;
-  }
-
-  .group-1 {
-    a {
-      display: inline-block;
-      margin-right: 10px;
-      margin-left: 10px;
-    }
-
-    img {
-      max-height: 65px;
-      width: auto;
-    }
-  }
-
-  .group-2 {
-    padding: 10px 40px;
-
-    a {
-      display: inline-block;
-      margin: 10px;
-      margin-bottom: 25px;
-      vertical-align: middle;
-    }
-
-    img {
-      vertical-align: middle;
-      min-height: 32px;
-      max-height: 45px;
-      height: auto;
-      width: auto;
-    }
-
-    .fidelity img, .macarthur img {
-      min-height: 18px;
-      max-height: 18px;
-    }
-
-    .wcs img {
-      min-height: 40px;
-    }
-
-    .hilton img, .IRC img {
-      min-height: 65px;
-      max-height: 65px;
-    }
-  }
-}
-
-#dev {
-  background: #FFF;
-
-  .main-projects {
-    max-width: 450px;
-    display: flex;
-    margin: 40px auto;
-    background: rgba($black, 0.05);
-    padding: 0px 10px 0px 20px;
-    flex-wrap: wrap;
-
-    .repo-item {
-      padding: 1em 0.5em;
-      width: 50%;
-      box-sizing: border-box;
-
-      span {
-        display: block;
-        font-size: 0.9em;
-        color: $gray;
-      }
-
-      a {
-        text-decoration: none;
-        color: darken($blue, 5%);
-        font-weight: 600;
-
-        &:hover {
-          color: lighten($blue, 5%);
-        }
-      }
-    }
-  }
-
-  .team {
-    max-width: 700px;
-    margin: 40px auto;
-    text-align: center;
-
-    .team-list {
-      display: flex;
-      max-width: 560px;
-      display: flex;
-      align-items: center;
-      flex-wrap: wrap;
-      justify-content: center;
-      margin: 0 auto;
-    }
-
-    .team-item {
-      text-align: left;
-      padding: 1em;
-      box-sizing: border-box;
-      width: 33.3%;
-
-      @media screen and (max-width: 768px) {
-        width: 50%;
-        padding-top: 0.5em;
-      }
-
-      b {
-        white-space: nowrap
-      }
-
-      span {
-        display: block;
-        font-size: 0.9em;
-        margin-top: 5px;
-        color: $gray;
-      }
-    }
-  }
-}
-
-#help {
-  background: $whitesmoke;
-  text-align: center;
-
-  .container {
-    max-width: 750px;
-  }
-
-  .two-cols {
-    @media screen and (min-width: 769px) {
-      align-items: flex-end;
-    }
-  }
-}
-
-#covid {
-  background: $covid-blue;
-  text-align: center;
-
-  .covid-icon {
-    width: 71px;
   }
 }
 
@@ -544,61 +333,6 @@ section.section-text-page {
 
     h3 {
       margin-top: 2em;
-    }
-  }
-}
-
-#examples {
-  text-align: center;
-  background: rgba($black, 0.8);
-  border-bottom: none;
-
-  h2, h3, p {
-    color: white;
-  }
-
-  .group-examples {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    max-width: 830px;
-    margin: 0 auto;
-
-    .example-item {
-      padding: 25px;
-      padding-right: 15px;
-      width: 25%;
-      box-sizing: border-box;
-      text-align: left;
-
-      @media screen and (max-width: 768px) {
-        width: 50%;
-      }
-
-      a {
-        font-size: 18px;
-        line-height: 20px;
-        color: lighten($blue, 10%);
-        text-decoration: none;
-        opacity: 0.75;
-
-        span {
-          text-transform: uppercase;
-          font-family: 'Source Sans Pro', sans-serif;
-          color: #FFF;
-          opacity: 0.75;
-          display: block;
-          transition: $link_transition;
-
-          &:hover {
-            transition: $link_transition;
-          }
-        }
-
-        &:hover, &:hover span {
-          opacity: 1;
-        }
-      }
     }
   }
 }
