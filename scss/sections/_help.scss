@@ -1,0 +1,16 @@
+@import "../variables";
+
+#help {
+  background: $whitesmoke;
+  text-align: center;
+
+  .container {
+    max-width: 750px;
+  }
+
+  .two-cols {
+    @media screen and (min-width: 769px) {
+      align-items: flex-end;
+    }
+  }
+}

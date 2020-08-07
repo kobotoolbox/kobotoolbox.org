@@ -1,0 +1,10 @@
+@import "../variables";
+
+#covid {
+  background: $covid-blue;
+  text-align: center;
+
+  .covid-icon {
+    width: 71px;
+  }
+}

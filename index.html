@@ -144,33 +144,24 @@ title: "KoBoToolbox | Data Collection Tools for Challenging Environments"
 
 <section id="partners" class="section">
     <h2>Open Source Development supported by</h2>
-    <div class="group-1">
-        <a href="https://hhi.harvard.edu"><img src="images/logos/HHI.png" /></a>
-        <a href="https://www.brighamandwomens.org"><img src="images/logos/bwh.png" /></a>
-        <a><img src="images/logos/kweyo.png" /></a>
+    <div class="partners-group partners-group--main">
+        {% for partner in site.data.partners %}
+        {% if partner.is_main == true %}
+        <a href="{{ partner.url }}" class="partner partner--{{partner.name}}">
+            <img src="{{ partner.logo }}" alt="{{partner.name}}" />
+        </a>
+        {% endif %}
+        {% endfor %}
     </div>
     <h3>with additional support from</h3>
-    <div class="group-2">
-        <a href="http://www.unocha.org"><img src="images/logos/ocha.png" /></a>
-        <a href="http://www.unhcr.org"><img src="images/logos/UNHCR-offical-logo-RGB-white.png" /></a>
-        <a href="http://iom.by/"><img src="images/logos/IOM-Logo-EN-White.png" /></a>
-        <a href="http://www.undp.org"><img src="images/logos/undp.png" /></a>
-        <a href="http://www.wfp.org"><img src="images/logos/wfp-logo.svg" /></a>
-        <a href="https://www.rescue.org" class="IRC"><img src="images/logos/IRC.png" /></a>
-        <a href="https://www.msf.org"><img src="images/logos/MSF.png" /></a>
-        <a href="https://www.wcs.org" class="wcs"><img src="images/logos/WCS.svg" /></a>
-        <a href="http://www.wri.org"><img src="images/logos/WRI.png" /></a>
-        <a href="https://www.savethechildren.net"><img src="images/logos/Save_the_Children_logo.png" /></a>
-        <a href="https://m4mgmt.org"><img src="images/logos/m4m.png" /></a>
-        <a href="http://www.physiciansforhumanrights.org"><img src="images/logos/phr.png" /></a>
-        <a href="https://www.usaid.gov"><img src="images/logos/usaid.png" /></a>
-        <a href="https://www.macfound.org" class="macarthur"><img src="images/logos/macarthur.png" /></a>
-        <a href="https://www.hiltonfoundation.org" class="hilton"><img src="images/logos/hilton.png" /></a>
-        <a href="http://www.fidelityfoundation.org" class="fidelity"><img src="images/logos/fidelity.png" /></a>
-        <a href="https://www.tides.org"><img src="images/logos/Tides.png" /></a>
-        <a href="https://www.cisco.com"><img src="images/logos/cisco.svg" /></a>
-        <a href="https://humanityunited.org"><img src="images/logos/humanity-united.png" /></a>
-
+    <div class="partners-group partners-group--additional">
+        {% for partner in site.data.partners %}
+        {% if partner.is_main == false %}
+        <a href="{{ partner.url }}" class="partner partner--{{partner.name}}">
+            <img src="{{ partner.logo }}" alt="{{partner.name}}" />
+        </a>
+        {% endif %}
+        {% endfor %}
     </div>
     <br/><br/>
     <!-- <img src="images/addtl-support.png" /> -->
