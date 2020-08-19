@@ -659,6 +659,10 @@ header ul#nav li a:hover {
   min-height: 40px;
 }
 
+#partners .partner.partner--hgc img {
+  min-height: 65px;
+}
+
 #partners .partner.partner--hilton img,
 #partners .partner.partner--irc img {
   min-height: 65px;

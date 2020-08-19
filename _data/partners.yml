@@ -1,114 +1,143 @@
 - name: "hhi"
   url: "https://hhi.harvard.edu"
   logo: "images/logos/HHI.png"
+  title: ""
   is_main: true
 
 - name: "bwh"
   url: "https://www.brighamandwomens.org"
   logo: "images/logos/bwh-logo.svg"
+  title: ""
   is_main: true
 
 - name: "kweyo"
   url: ""
   logo: "images/logos/kweyo.png"
+  title: ""
   is_main: true
 
 - name: "cisco"
   url: "https://cisco.com"
   logo: "images/logos/cisco.svg"
+  title: ""
   is_main: false
 
 - name: "fidelity"
   url: "http://www.fidelityfoundation.org"
   logo: "images/logos/fidelity.png"
+  title: ""
   is_main: false
 
 - name: "hilton"
   url: "https://hiltonfoundation.org"
   logo: "images/logos/hilton-white.svg"
+  title: ""
+  is_main: false
+
+- name: "hgc"
+  url: "https://humanitariangrandchallenge.org"
+  logo: "images/logos/hgc_logo.svg"
+  title: "This Project is supported by the Humanitarian Grand Challenge; a partnership of USAID, DFID UK, and the Ministry of Foreign Affairs of the Netherlands."
   is_main: false
 
 - name: "humanityunited"
   url: "https://humanityunited.org"
   logo: "images/logos/humanity-united.png"
+  title: ""
   is_main: false
 
 - name: "iom"
   url: "http://iom.by"
   logo: "images/logos/IOM-Logo-EN-White.png"
+  title: ""
   is_main: false
 
 - name: "m4mgmt"
   url: "https://m4mgmt.org"
   logo: "images/logos/m4mgmt.svg"
+  title: ""
   is_main: false
 
 - name: "macarthur"
   url: "https://macfound.org"
   logo: "images/logos/macarthur-stacked.svg"
+  title: ""
   is_main: false
 
 - name: "msf"
   url: "https://msf.org"
   logo: "images/logos/MSF.png"
+  title: ""
   is_main: false
 
 - name: "phr"
   url: "https://physiciansforhumanrights.org"
   logo: "images/logos/phr.png"
+  title: ""
   is_main: false
 
 - name: "irc"
   url: "https://rescue.org"
   logo: "images/logos/IRC.png"
+  title: ""
   is_main: false
 
 - name: "savethechildren"
   url: "https://savethechildren.net"
   logo: "images/logos/Save_the_Children_logo.png"
+  title: ""
   is_main: false
 
 - name: "tides"
   url: "http://tides.org"
   logo: "images/logos/tides.svg"
+  title: ""
   is_main: false
 
 - name: "undp"
   url: "https://undp.org"
   logo: "images/logos/undp.png"
+  title: ""
   is_main: false
 
 - name: "unhcr"
   url: "https://unhcr.org"
   logo: "images/logos/UNHCR-offical-logo-RGB-white.png"
+  title: ""
   is_main: false
 
 - name: "unocha"
   url: "https://unocha.org"
   logo: "images/logos/ocha.png"
+  title: ""
   is_main: false
 
 - name: "usaid"
   url: "https://usaid.gov"
   logo: "images/logos/usaid.png"
+  title: ""
   is_main: false
 
 - name: "wcs"
   url: "https://wcs.org"
   logo: "images/logos/WCS.svg"
+  title: ""
   is_main: false
 
 - name: "wfp"
   url: "https://wfp.org"
   logo: "images/logos/wfp-logo.svg"
+  title: ""
   is_main: false
 
 - name: "worldbank"
   url: "https://www.worldbank.org"
   logo: "images/logos/theworldbank.svg"
+  title: ""
   is_main: false
 
 - name: "wri"
   url: "https://wri.org"
   logo: "images/logos/WRI.png"
+  title: ""
   is_main: false
