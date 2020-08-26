@@ -30,7 +30,8 @@ title: "Request for Proposals | KoBoToolbox"
             <li>The presence of a new metaquestion, similar to the existing <em>audit</em> metaquestion, in the XForm will indicate that background audio recording has been requested by the form author</li>
             <li>The presence of a corresponding setting in pyxform to control the XForm metaquestion in XLSForm</li>
             <li>There should be a configurable setting in the application on whether to allow background recordings. If a form requests it but the application settings have not allowed it, then the user should see a notification asking them to enable it. However, not enabling the setting should not prevent someone to fill the form.</li>
-            <li>File size is an issue when submitting in some environments, but for this feature we should assume that sufficient bandwidth is available. If time permits, this work could include a setting in Collect to send XML submissions without attachments, so that recordings can be copied offline without stopping regular submissions.</li>
+            <li>File size is an issue when submitting in some environments, but for this feature we should assume that sufficient bandwidth is available.</li>
+            <li>Optional: This work could include a setting in Collect to send XML submissions without attachments, so that recordings can be copied offline without stopping regular submissions.</li>
         </ul>
         <p><strong>2) Adding native audio recording for <code>audio</code> type questions</strong></p>
         <p><strong>Use cases</strong></p>
@@ -41,7 +42,7 @@ title: "Request for Proposals | KoBoToolbox"
         </ul>
         <p><strong>Feature details</strong></p>
         <ul>
-            <li>For each audio question, users should be able to start, pause, and stop recording, delete recording, play recording, pause playback</li>
+            <li>For each audio question, users should be able to start, pause, and stop recording, delete recording, play and seek recording, pause playback</li>
             <li>In General Settings, users should also be able to choose between different recording settings:<ul>
                 <li>Record audio with various codecs, such as lossless (e.g. FLAC), a speech-optimized lossy codec, such as AMR, and a general-purpose lossy codec, such as MP3.</li>
                 <li>Choose recording quality (stereo/mono, sample rate, and bitrate as appropriate)</li>
