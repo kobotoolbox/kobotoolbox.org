@@ -1,0 +1,133 @@
+---
+title: "Request for Proposals | KoBoToolbox"
+---
+
+<section class="section section-text-page" id="request-for-proposals">
+    <div class="container">
+        <h2 id="request-for-proposals">Request for Proposals</h2>
+        <p>KoBo, Inc, a 501(c)3 nonprofit organization registered in Massachusetts, is requesting bids for the implementation of changes to ODK Collect application to add audio recording functionality</p>
+        <p><strong>Proposal Due Date</strong>: September 9, 2020 (midnight EST)</p>
+        <p><strong>Send Proposals to</strong>: KoBo Inc., tenders@kobotoolbox.org,subject line &quot;RFP - Android development&quot;</p>
+        <p><strong>For questions about this RFP</strong>: Contact Tino Kreutzer, Executive Director, tino.kreutzer@kobotoolbox.org, subject line &quot;RFP - Android development&quot;</p>
+        <h3 id="terms-of-reference">Terms of Reference</h3>
+        <h3 id="background">Background</h3>
+        <p>KoBoToolbox is a free, open source data collection and management software platform specifically designed for humanitarians and researchers working in complex emergencies and resource-poor environments. It was created in 2005 by Drs. Patrick Vinck and Phuong Pham, faculty now based at the Harvard Humanitarian Initiative (HHI), with the public version being released in 2011. In 2013, with funding from USAID, UNOCHA and IRC partnered with KoBoToolbox to take the existing tool and transform it into a comprehensive platform for humanitarian data collection. The resulting platform was launched in 2014 as a free tool with unlimited data collection and storage for humanitarian actors (<a href="https://kobo.humanitarianresponse.info">https://kobo.humanitarianresponse.info</a>). The tool is based on or closely related to widely supported open source technologies, such as ODK Collect, XLSForm, and XForms. In 2019, KoBo, Inc. was founded as a nonprofit organization to ensure the long-term sustainability of KoBoToolbox. The mission of KoBo, Inc. is to host and maintain KoBoToolbox, a data collection, management, and visualization platform used globally for humanitarian actions and to support open source data systems and technology for global development, peace, human rights and humanitarian action.</p>
+        <h3 id="objectives">Objectives</h3>
+        <p>The objective of this project is to add native audio recording capabilities to the ODK Collect application. Specifically, this includes two features: 1) Enabling background recordings of entire (or partial) interviews; and 2) enabling audio recording for <code>audio</code> type questions to be created natively without the need of external applications.</p>
+        <p>ODK Collect cannot, at the moment, create full audio recordings of entire interviews. While technically possible, using another application to record the interview in parallel and linking it with the collected data is too complicated.</p>
+        <p>The ODK Collect application allows for creating audio recordings of individual interview responses but requires the presence of another application for this purpose. Such applications often are not free, have many confusing settings, and generally add to the training requirements for enumerators.</p>
+        <h3 id="deliverables">Deliverables</h3>
+        <p>The deliverables are two related features to the ODK Collect Android application:</p>
+        <p><strong>1) Enabling background recordings of entire (or partial) interviews</strong></p>
+        <p><strong>Use cases</strong></p>
+        <ul>
+            <li>As a user I&#39;d like to be able to record audio and submit them as part of the form without leaving the form page</li>
+            <li>As a survey administrator, I&#39;d like to record entire surveys (or sections of a survey), not only single questions. The goal is to have a parallel audio file that would allow us to compare actual responses with how they were coded by the enumerator.</li>
+        </ul>
+        <p><strong>Feature details</strong></p>
+        <ul>
+            <li>The recording should be done in the background while the enumerator asks questions and receives responses</li>
+            <li>The presence of a new metaquestion, similar to the existing <em>audit</em> metaquestion, in the XForm will indicate that background audio recording has been requested by the form author</li>
+            <li>The presence of a corresponding setting in pyxform to control the XForm metaquestion in XLSForm</li>
+            <li>There should be a configurable setting in the application on whether to allow background recordings. If a form requests it but the application settings have not allowed it then the user should see a notification asking them to enable it. However, not enabling the setting should not prevent someone to fill the form.</li>
+            <li>File size is an issue when submitting in some environments, but for this feature we should assume that sufficient bandwidth is available. If time permits, this work could include a setting in Collect to send XML submissions without attachments, so that recordings can be copied offline without stopping regular submissions.</li>
+        </ul>
+        <p><strong>2) Adding native audio recording for <code>audio</code> type questions</strong></p>
+        <p><strong>Use cases</strong></p>
+        <ul>
+            <li>Recording interview responses</li>
+            <li>Recording focus group discussions</li>
+            <li>Recording environmental samples (e.g. birds, traffic, etc.)</li>
+        </ul>
+        <p><strong>Feature details</strong></p>
+        <ul>
+            <li>For each audio question, users should be able to start, pause, and stop recording, delete recording, play recording, pause playback</li>
+            <li>In General Settings, users should also be able to choose between different recording settings:<ul>
+                <li>Record audio with various codecs, such as lossless (e.g. FLAC), a speech-optimized lossy codec, such as AMR, and a general-purpose lossy codec, such as MP3.</li>
+                <li>Choose recording quality (stereo/mono, sample rate, and bitrate as appropriate)</li>
+            </ul>
+        </li>
+    </ul>
+    <h3 id="implementation-methodology-to-be-applied">Implementation methodology to be applied</h3>
+    <ul>
+        <li>Both software features are to be added to the application ODK Collect (<a href="https://github.com/getodk/collect">https://github.com/getodk/collect</a>), a free and open source tool for data collection on Android devices.</li>
+        <li>The features need to be integrated in the master branch of the repository. Specifically created forks of the repository are not acceptable. This requires that the features are developed in concertation with the ODK developer community (<a href="https://forum.getodk.org/">https://forum.getodk.org/</a>) and to follow the contributing guidelines (<a href="https://github.com/getodk/collect/blob/master/docs/CONTRIBUTING.md">https://github.com/getodk/collect/blob/master/docs/CONTRIBUTING.md</a>).</li>
+        <li>Code should be well documented, include test coverage, and be done so as to expand the size of the compiled application as little as possible.</li>
+        <li>The features should be developed in an agile or similar manner to allow for frequent technical and user acceptance testing.</li>
+    </ul>
+    <h3 id="expertise-required">Expertise required</h3>
+    <ul>
+        <li>At least 5 years of relevant software development experience</li>
+        <li>Proven track record developing Android applications</li>
+        <li>Understanding of XForms, OpenRosa, and prior experience developing features for ODK Collect are desirable</li>
+    </ul>
+    <h3 id="contract-duration">Contract duration</h3>
+    <p>The assignment will last for 12 weeks, starting from the date of awarding the contract.</p>
+    <h3 id="payment-schedule">Payment schedule</h3>
+    <ol>
+        <li>Contract signature: 20%</li>
+        <li>Feature 1 testable in compiled test application (APK): 30%</li>
+        <li>Feature 2 testable in compiled test application (APK): 30%</li>
+        <li>Feature 1 and feature 2 merged into master branch of ODK Collect: 20%</li>
+    </ol>
+    <h3 id="reporting">Reporting</h3>
+    <p>The selected firm will report to Tino Kreutzer (Executive Director) and John Milner (Lead Developer).</p>
+    <h3 id="evaluation-criteria">Evaluation criteria</h3>
+    <p><strong>Technical competency (80%):</strong></p>
+    <table>
+        <thead>
+            <tr>
+                <th><strong>Criteria</strong></th>
+                <th><strong>Points</strong></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>At least 5 years of relevant software development experience</td>
+                <td>10</td>
+            </tr>
+            <tr>
+                <td>Proven track record developing Android applications</td>
+                <td>50</td>
+            </tr>
+            <tr>
+                <td>Understanding of XForms</td>
+                <td>30</td>
+            </tr>
+            <tr>
+                <td>Understanding of OpenRosa</td>
+                <td>30</td>
+            </tr>
+            <tr>
+                <td>Experience developing features for ODK Collect</td>
+                <td>50</td>
+            </tr>
+            <tr>
+                <td>effectiveness of proposed methodology</td>
+                <td>20</td>
+            </tr>
+            <tr>
+                <td>effectiveness of proposed timeframes</td>
+                <td>10</td>
+            </tr>
+            <tr>
+                <td><strong>TOTAL</strong></td>
+                <td><strong>200</strong></td>
+            </tr>
+        </tbody>
+    </table>
+    <p><strong>Price (20%):</strong></p>
+    <p>Financial proposals will be evaluated following completion of the technical evaluation. The eligible bidder with the lowest evaluated cost will be awarded 50 points. Financial proposals from other bidders will receive prorated points based on the relationship of the bidder&#39;s price to that of the lowest evaluated cost. For example, if bidder A has the lowest cost at $10, they receive 50 points. If bidder B&#39;s price is $30, they receive 17 points (10/30*50).</p>
+    <p><strong>Eligibility requirements:</strong></p>
+    <p>Only bidders who meet the following criteria are eligible to take part in tenders</p>
+    <p>issued by KoBo, Inc.:</p>
+    <ol>
+        <li>are financially solvent and able to conduct business operations in a professional and successful manner;</li>
+        <li>are not involved in any court proceedings which may affect their ability to conduct business or deliver the goods or services tendered;</li>
+        <li>do not appear on the World Bank&#39;s list of &#39;Listing of ineligible firms or listing of firm&#39;s letters of reprimand&#39; posted at www.worldbank.org;</li>
+        <li>do not appear on the OFAC List of Specially Designated Nationals and Blocked Persons published by the United States Government.</li>
+    </ol>
+
+
+</div>
+</section>
