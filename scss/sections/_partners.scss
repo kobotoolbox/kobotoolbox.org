@@ -12,40 +12,40 @@
   h3 {
     margin-top: 50px;
   }
+}
 
-  .partners-group {
+.logos-group {
+  a {
+    display: inline-block;
+    margin: 10px;
+  }
+
+  img {
+    vertical-align: middle;
+    height: auto;
+    width: auto;
+  }
+
+  &.logos-group--main {
+    img {
+      height: 65px;
+    }
+  }
+
+  &.logos-group--additional {
+    padding: 10px 40px;
+
     a {
-      display: inline-block;
-      margin: 10px;
+      margin-bottom: 25px;
     }
 
     img {
-      vertical-align: middle;
-      height: auto;
-      width: auto;
+      min-height: 32px;
+      max-height: 45px;
     }
 
-    &.partners-group--main {
-      img {
-        height: 65px;
-      }
-    }
-
-    &.partners-group--additional {
-      padding: 10px 40px;
-
-      a {
-        margin-bottom: 25px;
-      }
-
-      img {
-        min-height: 32px;
-        max-height: 45px;
-      }
-
-      img[src$=".svg"] {
-        height: 45px;
-      }
+    img[src$=".svg"] {
+      height: 45px;
     }
   }
 

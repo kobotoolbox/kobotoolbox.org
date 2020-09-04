@@ -144,21 +144,21 @@ title: "KoBoToolbox | Data Collection Tools for Challenging Environments"
 
 <section id="partners" class="section">
     <h2>Open Source Development supported by</h2>
-    <div class="partners-group partners-group--main">
+    <div class="logos-group logos-group--main">
         {% for partner in site.data.partners %}
         {% if partner.is_main == true %}
         <a href="{{ partner.url }}" class="partner partner--{{partner.name}}">
-            <img src="{{ partner.logo }}" alt="{{partner.name}}" />
+            <img src="{{ site.baseurl }}/{{ partner.logo }}" alt="{{partner.name}}" />
         </a>
         {% endif %}
         {% endfor %}
     </div>
     <h3>with additional support from</h3>
-    <div class="partners-group partners-group--additional">
+    <div class="logos-group logos-group--additional">
         {% for partner in site.data.partners %}
         {% if partner.is_main == false %}
         <a href="{{ partner.url }}" class="partner partner--{{partner.name}}" title="{{partner.title}}">
-            <img src="{{ partner.logo }}" alt="{{partner.name}}" />
+            <img src="{{ site.baseurl }}/{{ partner.logo }}" alt="{{partner.name}}" />
         </a>
         {% endif %}
         {% endfor %}
