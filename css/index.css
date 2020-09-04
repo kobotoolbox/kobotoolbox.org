@@ -614,57 +614,57 @@ header ul#nav li a:hover {
   margin-top: 50px;
 }
 
-#partners .partners-group a {
+.logos-group a {
   display: inline-block;
   margin: 10px;
 }
 
-#partners .partners-group img {
+.logos-group img {
   vertical-align: middle;
   height: auto;
   width: auto;
 }
 
-#partners .partners-group.partners-group--main img {
+.logos-group.logos-group--main img {
   height: 65px;
 }
 
-#partners .partners-group.partners-group--additional {
+.logos-group.logos-group--additional {
   padding: 10px 40px;
 }
 
-#partners .partners-group.partners-group--additional a {
+.logos-group.logos-group--additional a {
   margin-bottom: 25px;
 }
 
-#partners .partners-group.partners-group--additional img {
+.logos-group.logos-group--additional img {
   min-height: 32px;
   max-height: 45px;
 }
 
-#partners .partners-group.partners-group--additional img[src$=".svg"] {
+.logos-group.logos-group--additional img[src$=".svg"] {
   height: 45px;
 }
 
-#partners .partner:hover {
+.logos-group .partner:hover {
   scale: 1.1;
 }
 
-#partners .partner.partner--fidelity img {
+.logos-group .partner.partner--fidelity img {
   min-height: 18px;
   max-height: 18px;
 }
 
-#partners .partner.partner--wcs img {
+.logos-group .partner.partner--wcs img {
   min-height: 40px;
 }
 
-#partners .partner.partner--hgc img {
+.logos-group .partner.partner--hgc img {
   min-height: 65px;
 }
 
-#partners .partner.partner--hilton img,
-#partners .partner.partner--irc img {
+.logos-group .partner.partner--hilton img,
+.logos-group .partner.partner--irc img {
   min-height: 65px;
   max-height: 65px;
 }
