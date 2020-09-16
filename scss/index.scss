@@ -118,7 +118,7 @@ table {
 }
 
 .bg {
-  background: url("../images/front_background2.jpg") center center no-repeat;
+  background: url("../images/kobo-bg-jennie.jpg") center center no-repeat;
   background-size: cover;
   position: fixed;
   z-index: -1;
@@ -127,7 +127,7 @@ table {
   width: 100%;
 
   &.bg--hhi {
-    background-image: url("../images/khc2.jpg");
+    background-image: url("../images/kobo-bg-khc.jpg");
   }
 }
 

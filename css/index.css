@@ -822,7 +822,7 @@ table tbody td, table tbody th, table thead td, table thead th {
 }
 
 .bg {
-  background: url("../images/front_background2.jpg") center center no-repeat;
+  background: url("../images/kobo-bg-jennie.jpg") center center no-repeat;
   background-size: cover;
   position: fixed;
   z-index: -1;
@@ -832,7 +832,7 @@ table tbody td, table tbody th, table thead td, table thead th {
 }
 
 .bg.bg--hhi {
-  background-image: url("../images/khc2.jpg");
+  background-image: url("../images/kobo-bg-khc.jpg");
 }
 
 section.section {
