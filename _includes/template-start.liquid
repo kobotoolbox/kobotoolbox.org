@@ -53,5 +53,5 @@
     <script type="text/javascript" src="{{ site.baseurl }}/js/kobo.js"></script>
 </head>
 
-<body>
+<body {% if page.pageid %}class="{{ page.pageid }}"{% endif %}>
     {% include page-header.liquid %}
