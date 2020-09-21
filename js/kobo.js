@@ -118,13 +118,47 @@ $(function() {
     }
 
     // covid banner
-    document.querySelector('.js-covid-button').addEventListener('click', (evt) => {
-        evt.preventDefault();
-        scrollIt(document.querySelector('.js-covid-target'), 300);
-    });
-    document.querySelector('.js-covid-button-2').addEventListener('click', (evt) => {
-        evt.preventDefault();
-        scrollIt(document.querySelector('.js-covid-target'), 300);
-    });
+    function setupCovidBanner() {
+        const firstButtonEl = document.querySelector('.js-covid-button');
+        const secondButtonEl = document.querySelector('.js-covid-button-2');
 
+        if (firstButtonEl) {
+            document.querySelector('.js-covid-button').addEventListener('click', (evt) => {
+                evt.preventDefault();
+                scrollIt(document.querySelector('.js-covid-target'), 300);
+            });
+        }
+        if (secondButtonEl) {
+            document.querySelector('.js-covid-button-2').addEventListener('click', (evt) => {
+                evt.preventDefault();
+                scrollIt(document.querySelector('.js-covid-target'), 300);
+            });
+        }
+    }
+    setupCovidBanner();
+
+    function setupRandomBg() {
+        const randomBgsHome = [
+            "../images/kobo-bg-hands.jpg",
+            "../images/kobo-bg-home.jpg"
+        ];
+        const randomBgsKhc = [
+            "../images/kobo-bg-khc.jpg"
+        ];
+        const bgEl = document.getElementById("js-bg");
+        if (bgEl) {
+            let randomBg = "";
+            if (window.pageid && window.pageid === "home") {
+                randomBg = randomBgsHome[Math.floor(Math.random() * randomBgsHome.length)];
+            } else if (window.pageid && window.pageid === "khc") {
+                randomBg = randomBgsKhc[Math.floor(Math.random() * randomBgsKhc.length)];
+            }
+
+            if (randomBg !== "") {
+                bgEl.style.backgroundImage = `url(${randomBg})`;
+            }
+            bgEl.classList.add("bg--ready");
+        }
+    }
+    setupRandomBg();
 });

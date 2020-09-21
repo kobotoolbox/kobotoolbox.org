@@ -23,6 +23,11 @@ html {
 body {
   font-family: 'Roboto', sans-serif;
   color: $black;
+
+  &.home,
+  &.khc {
+    background-color: black;
+  }
 }
 
 h1, h2, h3 {
@@ -118,16 +123,27 @@ table {
 }
 
 .bg {
-  background: url("../images/kobo-bg-home.jpg") center center no-repeat;
+  background-image: url("../images/kobo-bg-hands.jpg");
+  background-repeat: no-repeat;
+  background-position: center 70px;
   background-size: cover;
   position: fixed;
   z-index: -1;
   top: 0px;
   left: 0px;
   width: 100%;
+  opacity: 0;
+  transition-property: opacity;
+  transition-duration: 1s;
+  transition-timing-function: ease-in;
 
-  &.bg--hhi {
+  &.bg--khc {
     background-image: url("../images/kobo-bg-khc.jpg");
+    background-position: center center;
+  }
+
+  &.bg--ready {
+    opacity: 1;
   }
 }
 
