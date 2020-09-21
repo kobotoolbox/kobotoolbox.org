@@ -725,6 +725,10 @@ body {
   color: #414453;
 }
 
+body.home, body.khc {
+  background-color: black;
+}
+
 h1, h2, h3 {
   font-family: 'Source Sans Pro', sans-serif;
   font-weight: 600;
@@ -822,17 +826,34 @@ table tbody td, table tbody th, table thead td, table thead th {
 }
 
 .bg {
-  background: url("../images/kobo-bg-home.jpg") center center no-repeat;
+  background-image: url("../images/kobo-bg-hands.jpg");
+  background-repeat: no-repeat;
+  background-position: center 70px;
   background-size: cover;
   position: fixed;
   z-index: -1;
   top: 0px;
   left: 0px;
   width: 100%;
+  opacity: 0;
+  -webkit-transition-property: opacity;
+  -o-transition-property: opacity;
+  transition-property: opacity;
+  -webkit-transition-duration: 1s;
+       -o-transition-duration: 1s;
+          transition-duration: 1s;
+  -webkit-transition-timing-function: ease-in;
+       -o-transition-timing-function: ease-in;
+          transition-timing-function: ease-in;
 }
 
-.bg.bg--hhi {
+.bg.bg--khc {
   background-image: url("../images/kobo-bg-khc.jpg");
+  background-position: center center;
+}
+
+.bg.bg--ready {
+  opacity: 1;
 }
 
 section.section {

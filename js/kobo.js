@@ -127,4 +127,28 @@ $(function() {
         scrollIt(document.querySelector('.js-covid-target'), 300);
     });
 
+    function setupRandomBg() {
+        const randomBgsHome = [
+            "../images/kobo-bg-hands.jpg",
+            "../images/kobo-bg-home.jpg"
+        ];
+        const randomBgsKhc = [
+            "../images/kobo-bg-khc.jpg"
+        ];
+        const bgEl = document.getElementById("js-bg");
+        if (bgEl) {
+            let randomBg = "";
+            if (window.pageid && window.pageid === "home") {
+                randomBg = randomBgsHome[Math.floor(Math.random() * randomBgsHome.length)];
+            } else if (window.pageid && window.pageid === "khc") {
+                randomBg = randomBgsKhc[Math.floor(Math.random() * randomBgsKhc.length)];
+            }
+
+            if (randomBg !== "") {
+                bgEl.style.backgroundImage = `url(${randomBg})`;
+            }
+            bgEl.classList.add("bg--ready");
+        }
+    }
+    setupRandomBg();
 });
