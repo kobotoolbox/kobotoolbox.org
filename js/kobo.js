@@ -118,14 +118,24 @@ $(function() {
     }
 
     // covid banner
-    document.querySelector('.js-covid-button').addEventListener('click', (evt) => {
-        evt.preventDefault();
-        scrollIt(document.querySelector('.js-covid-target'), 300);
-    });
-    document.querySelector('.js-covid-button-2').addEventListener('click', (evt) => {
-        evt.preventDefault();
-        scrollIt(document.querySelector('.js-covid-target'), 300);
-    });
+    function setupCovidBanner() {
+        const firstButtonEl = document.querySelector('.js-covid-button');
+        const secondButtonEl = document.querySelector('.js-covid-button-2');
+
+        if (firstButtonEl) {
+            document.querySelector('.js-covid-button').addEventListener('click', (evt) => {
+                evt.preventDefault();
+                scrollIt(document.querySelector('.js-covid-target'), 300);
+            });
+        }
+        if (secondButtonEl) {
+            document.querySelector('.js-covid-button-2').addEventListener('click', (evt) => {
+                evt.preventDefault();
+                scrollIt(document.querySelector('.js-covid-target'), 300);
+            });
+        }
+    }
+    setupCovidBanner();
 
     function setupRandomBg() {
         const randomBgsHome = [
