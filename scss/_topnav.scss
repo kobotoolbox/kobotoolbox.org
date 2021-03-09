@@ -1,0 +1,51 @@
+@import "variables";
+
+.topnav {
+  overflow: hidden;
+  position: fixed;
+  z-index: 10;
+  top: 70px;
+  left: 0;
+  width: 100%;
+  background-color: rgba($black, 0.8);
+  text-align: right;
+
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0 28px;
+
+    li {
+      display: inline-block;
+
+      a {
+        display: inline-block;
+        color: $white;
+        padding: 10px;
+        text-decoration: none;
+        font-size: 16px;
+
+        &:hover {
+          color: $white;
+          opacity: 0.8;
+        }
+
+        &.topnav__button {
+          background-color: $blue;
+          color: $white;
+          border-radius: 5px;
+          padding-top: 5px;
+          padding-bottom: 5px;
+          margin-top: 5px;
+          margin-bottom: 5px;
+        }
+      }
+
+      @media screen and (min-width: 769px) {
+        &.current a:not(.topnav__button) {
+          color: $blue;
+        }
+      }
+    }
+  }
+}
