@@ -1,44 +1,26 @@
 @import "variables";
 
-#khc,
-#purpose,
-#join,
-#committee,
-#vision {
+#about,
+#mission,
+#contact {
   h2 {
     text-align: center;
   }
 }
 
-#khc,
-#purpose,
-#join {
+#about,
+#mission,
+#contact {
   background: $whitesmoke;
 }
 
-#committee,
-#vision {
+#mission {
   background: rgba($black, 0.8);
   border-bottom: none;
   color: $white;
 }
 
-#committee {
-  text-align: center;
-
-  a {
-    display: inline-block;
-    margin-right: 10px;
-    margin-left: 10px;
-  }
-
-  img {
-    max-height: 65px;
-    width: auto;
-  }
-}
-
-#vision {
+#mission {
   h3 {
     margin-top: 50px;
   }
@@ -55,7 +37,7 @@
   }
 }
 
-#join {
+#contact {
   text-align: center;
 
   .button {

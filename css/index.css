@@ -376,6 +376,47 @@ header ul#nav li a:hover {
   margin-top: 40px;
 }
 
+#about h2,
+#mission h2,
+#contact h2 {
+  text-align: center;
+}
+
+#about,
+#mission,
+#contact {
+  background: #f8f8f8;
+}
+
+#mission {
+  background: rgba(65, 68, 83, 0.8);
+  border-bottom: none;
+  color: #ffffff;
+}
+
+#mission h3 {
+  margin-top: 50px;
+}
+
+#mission a {
+  display: inline-block;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+#mission img {
+  max-height: 65px;
+  width: auto;
+}
+
+#contact {
+  text-align: center;
+}
+
+#contact .button {
+  margin-top: 40px;
+}
+
 #about {
   background: #f8f8f8;
 }
@@ -725,7 +766,7 @@ body {
   color: #414453;
 }
 
-body.home, body.khc {
+body.home, body.khc, body.kobo {
   background-color: black;
 }
 
