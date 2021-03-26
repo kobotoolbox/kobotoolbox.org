@@ -26,7 +26,7 @@ In total, 70 enumerators from various organizations who have partnered with the 
 
 Once the collection process is complete, data validation, cleaning and preliminary analysis take place over three months using a range of external tools, after which the report can be compiled.
 
-![© UNHCR Ivor Prickett](images/unhcr_image_02.jpg "© UNHCR Ivor Prickett")
+![© UNHCR Ivor Prickett](images/unhcr_image_03.jpg "© UNHCR Ivor Prickett")
 *© UNHCR Ivor Prickett*
 
 With few teams on the ground, limited time and harsh conditions, efficient and robust means of collecting and managing data are critical.
