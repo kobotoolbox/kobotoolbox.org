@@ -5,6 +5,9 @@
         <div class="container">
             <h2 class="post-title">{{ page.title }}</h2>
             <time datetime="{{ page.date }}" class="post-date">{{ page.date | date_to_string }}</time>
+            {% if page.author %}
+                <h5 class="post-author">By {{ page.author }}</h5>
+            {% endif %}
             {{ content }}
 
             <nav class="post-related">
