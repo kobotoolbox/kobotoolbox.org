@@ -1,4 +1,6 @@
-# The Syrian Refugee Crisis in Lebanon and how KoBoToolbox is aiding humanitarian efforts
+---
+title: The Syrian Refugee Crisis in Lebanon and how KoBoToolbox is aiding humanitarian efforts
+---
 
 **Despite shifting global attention toward the COVID-19 pandemic throughout 2020 and 2021, the war devastating Syria and its people** [**drags on**](https://www.bbc.com/news/world-middle-east-53322857)**. The lives of millions of Syrians fleeing for safety continues to be precarious and their futures uncertain.**
 
