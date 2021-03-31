@@ -500,7 +500,7 @@ header ul#nav li a:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  max-width: 560px;
+  max-width: 640px;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
