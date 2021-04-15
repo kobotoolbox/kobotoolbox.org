@@ -90,7 +90,7 @@ tool for data collection, works offline, easy to create forms and users on the
 server, and is used by most of the humanitarian actors. Hence, data collectors
 require minimum training to configure and use the forms. In addition to that,
 forms are easily integrated into other systems for monitoring and for creating
-dashboards. —  UNHCR"
+dashboards." —  Raffi Kouzoudjian, UNHCR
 
 The UNHCR has been working with KoBoToolbox since 2016 to ensure that their
 humanitarian efforts on the ground are more streamlined and impactful.
