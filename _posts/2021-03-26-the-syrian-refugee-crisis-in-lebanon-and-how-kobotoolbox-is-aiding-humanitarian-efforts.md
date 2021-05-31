@@ -15,7 +15,7 @@ millions of Syrians fleeing for safety continues to be precarious and their
 futures uncertain.**
 
 The United Nations High Commissioner for Refugees,
-[UNCHR](https://www.unhcr.org/), is leading humanitarian efforts for refugees
+[UNHCR](https://www.unhcr.org/), is leading humanitarian efforts for refugees
 within Lebanon — Syria's neighbour who the continued crisis has particularly
 hard hit. The Government of Lebanon estimates that they are hosting roughly [1.5
 million](https://data2.unhcr.org/en/documents/details/68651) Syrian refugees who
