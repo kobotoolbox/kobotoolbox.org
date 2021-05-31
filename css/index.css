@@ -1146,7 +1146,7 @@ section.section-text-page .container h3 {
 }
 
 .post-summary {
-  border-top: 1px dotted #ddd;
+  border-top: 1px dotted #dddddd;
   max-width: 1000px;
   margin: 0 auto;
   padding: 1rem 0;
