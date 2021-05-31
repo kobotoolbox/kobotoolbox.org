@@ -1,3 +1,10 @@
+- name: "koboinc"
+  url: "https://www.kobotoolbox.org/kobo"
+  logo: "images/logos/kobo-inc-white.svg"
+  title: ""
+  is_main: true
+  is_khc: false
+
 - name: "bwh"
   url: "https://www.brighamandwomens.org"
   logo: "images/logos/bwh-logo.svg"
@@ -21,7 +28,7 @@
 
 - name: "fidelity"
   url: "http://www.fidelityfoundation.org"
-  logo: "images/logos/fidelity.png"
+  logo: "images/logos/fidelity-white.svg"
   title: ""
   is_main: false
   is_khc: false
@@ -42,7 +49,7 @@
 
 - name: "humanityunited"
   url: "https://humanityunited.org"
-  logo: "images/logos/humanity-united.png"
+  logo: "images/logos/humanity-united-white.svg"
   title: ""
   is_main: false
   is_khc: false
@@ -56,49 +63,49 @@
 
 - name: "irc"
   url: "https://rescue.org"
-  logo: "images/logos/IRC.png"
+  logo: "images/logos/IRC-white.svg"
   title: ""
   is_main: false
   is_khc: false
 
-- name: "kweyo"
-  url: ""
-  logo: "images/logos/kweyo.png"
+- name: "jdc"
+  url: "https://www.jointdatacenter.org"
+  logo: "images/logos/jdc-white.svg"
   title: ""
-  is_main: true
+  is_main: false
   is_khc: false
 
 - name: "m4mgmt"
   url: "https://m4mgmt.org"
-  logo: "images/logos/m4mgmt.svg"
+  logo: "images/logos/m4mgmt-white.svg"
   title: ""
   is_main: false
   is_khc: false
 
 - name: "macarthur"
   url: "https://macfound.org"
-  logo: "images/logos/macarthur-stacked.svg"
+  logo: "images/logos/macarthur-stacked-white.svg"
   title: ""
   is_main: false
   is_khc: false
 
 - name: "msf"
   url: "https://msf.org"
-  logo: "images/logos/MSF.png"
+  logo: "images/logos/MSF-white.svg"
   title: ""
   is_main: false
   is_khc: false
 
 - name: "phr"
   url: "https://physiciansforhumanrights.org"
-  logo: "images/logos/phr.png"
+  logo: "images/logos/phr-white.svg"
   title: ""
   is_main: false
   is_khc: false
 
 - name: "savethechildren"
   url: "https://savethechildren.net"
-  logo: "images/logos/Save_the_Children_logo.png"
+  logo: "images/logos/Save_the_Children_logo-white.svg"
   title: ""
   is_main: false
   is_khc: false
@@ -112,7 +119,7 @@
 
 - name: "undp"
   url: "https://undp.org"
-  logo: "images/logos/undp.png"
+  logo: "images/logos/undp-white.svg"
   title: ""
   is_main: false
   is_khc: false
@@ -140,14 +147,14 @@
 
 - name: "usaid"
   url: "https://usaid.gov"
-  logo: "images/logos/usaid.png"
+  logo: "images/logos/usaid-white.svg"
   title: ""
   is_main: false
   is_khc: false
 
 - name: "wcs"
   url: "https://wcs.org"
-  logo: "images/logos/WCS.svg"
+  logo: "images/logos/WCS-white.svg"
   title: ""
   is_main: false
   is_khc: false
@@ -168,7 +175,7 @@
 
 - name: "wri"
   url: "https://wri.org"
-  logo: "images/logos/WRI.png"
+  logo: "images/logos/WRI-white.svg"
   title: ""
   is_main: false
   is_khc: false
