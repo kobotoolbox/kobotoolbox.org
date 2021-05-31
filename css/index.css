@@ -500,8 +500,6 @@ header ul#nav li a:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  max-width: 560px;
-  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -1103,6 +1101,13 @@ section.section-text-page .container h3 {
 }
 
 .post-date {
+  font-style: italic;
+  margin: 1rem 0;
+  text-align: center;
+  display: block;
+}
+
+.post-author {
   font-style: italic;
   margin: 1rem 0;
   text-align: center;
