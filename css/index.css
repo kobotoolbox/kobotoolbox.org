@@ -664,6 +664,10 @@ header ul#nav li a:hover {
   width: auto;
 }
 
+.logos-group.logos-group--main a {
+  margin: 30px;
+}
+
 .logos-group.logos-group--main img {
   height: 65px;
 }
@@ -687,6 +691,13 @@ header ul#nav li a:hover {
 
 .logos-group .partner:hover {
   scale: 1.1;
+}
+
+.logos-group .partner.partner--koboinc img {
+  max-height: 50px;
+  -webkit-transform: translateY(-5px);
+      -ms-transform: translateY(-5px);
+          transform: translateY(-5px);
 }
 
 .logos-group .partner.partner--hgc img {
