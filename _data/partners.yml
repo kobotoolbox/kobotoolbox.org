@@ -1,6 +1,6 @@
 - name: "koboinc"
   url: "https://www.kobotoolbox.org/kobo"
-  logo: "images/logos/kobo-inc-white.svg"
+  logo: "images/logos/kobo-inc-darkbackground.svg"
   title: ""
   is_main: true
   is_khc: false
