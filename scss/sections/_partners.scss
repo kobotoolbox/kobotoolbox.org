@@ -27,6 +27,10 @@
   }
 
   &.logos-group--main {
+    a {
+      margin: 30px;
+    }
+
     img {
       height: 65px;
     }
@@ -52,6 +56,12 @@
   .partner {
     &:hover {
       scale: 1.1;
+    }
+
+    &.partner--koboinc img {
+      // make it look more in line with other two logos
+      max-height: 50px;
+      transform: translateY(-5px);
     }
 
     &.partner--hgc img {
